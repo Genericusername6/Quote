@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 import random 
+import stuff
+
 feeling = input("How are you feeling today?\n")
 
 f = open("happyquotes")
@@ -13,10 +15,7 @@ with open("sadquotes") as f:
 
 if feeling.lower() == "happy":
     print(random.choice(happyquotes))
-    f = open("puppygood")
-    text = f.read()
-    print(text)
-    f.close()
+
     
 elif feeling.lower() == "sad":
     print(random.choice(sadquotes))
